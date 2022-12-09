@@ -5,6 +5,7 @@ import (
 	"github.com/rrojan/gin-skeleton/api/controllers"
 )
 
+// Adds Resource routes to a routergroup
 func ResourceRoute(router *gin.RouterGroup) {
 	c := controllers.ResourceController{}
 	router.GET("/resource", c.Get)
