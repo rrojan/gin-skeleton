@@ -1,6 +1,6 @@
 # Golang Gin Skeleton
 
-Go project skeleton for rapid development using the Gin framework.
+Lightweight Go project skeleton for rapid development using the Gin framework.
 
 ### Includes:
 - [x] Routing, middleware support and panic recovery with Gin
