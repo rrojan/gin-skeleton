@@ -8,7 +8,6 @@ import (
 // Adds Resource routes to a routergroup
 func ResourceRoute(router *gin.RouterGroup) {
 	c := controllers.ResourceController{}
-	router.GET("/resource", c.Get)
 	rg := router.Group("/resources")
 	{
 		rg.GET("/", c.Index)
