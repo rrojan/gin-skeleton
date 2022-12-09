@@ -7,3 +7,11 @@ Go project skeleton for rapid development using the Gin framework.
 - [x] Postgres database support with GORM
 - [x] Docker setup
 - [ ] Generator tool for scaffolding APIs with one command 
+
+
+Refs:
+- https://github.com/vsouza/go-gin-boilerplate/
+- https://github.com/dipeshdulal/clean-gin
+- https://github.com/eddycjy/go-gin-example
+
+
