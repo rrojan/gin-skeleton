@@ -17,6 +17,7 @@ Features:
 Refs:
 - https://github.com/vsouza/go-gin-boilerplate/
 - https://github.com/dipeshdulal/clean-gin
+- https://github.com/readytowork-org/go-gin-skeleton
 - https://github.com/eddycjy/go-gin-example
 
 
