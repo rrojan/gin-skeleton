@@ -2,15 +2,15 @@ package controllers
 
 import (
 	"fmt"
-	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/rrojan/gin-skeleton/api/responses"
 )
 
 type ResourceController struct{}
 
 func (con ResourceController) Index(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
+	responses.JSON(c, gin.H{
 		"data": "This is the resource controller",
 	})
 }
@@ -18,7 +18,7 @@ func (con ResourceController) Index(c *gin.Context) {
 func (con ResourceController) Get(c *gin.Context) {
 	id, _ := c.Params.Get("id")
 
-	c.JSON(http.StatusOK, gin.H{
+	responses.JSON(c, gin.H{
 		"data": fmt.Sprintf("This is the resource get for %s", id),
 	})
 }
