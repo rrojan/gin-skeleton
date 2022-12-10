@@ -5,10 +5,9 @@ import (
 )
 
 // Router interface
-type Router interface{}
 
 // Returns a new router engine instance with routes setup, logging and recovery
-func NewRouter() Router {
+func NewRouter() *gin.Engine {
 	router := gin.New()
 	router.Use(gin.Logger())
 	router.Use(gin.Recovery())
