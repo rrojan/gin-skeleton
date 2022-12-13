@@ -1,7 +1,6 @@
 package db
 
 import (
-	"github.com/rrojan/gin-skeleton/api/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -14,6 +13,5 @@ func Connect() {
 	if err != nil {
 		panic(err)
 	}
-	db.AutoMigrate(&models.Resource{})
 	DB = db
 }
