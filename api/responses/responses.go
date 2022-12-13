@@ -21,7 +21,7 @@ func JSON404(c *gin.Context, data interface{}) {
 }
 
 // Writes a StatusOK(200) response with data and count
-func JSONCount(c *gin.Context, data interface{}, count int) {
+func JSONCount(c *gin.Context, data interface{}, count int64) {
 	c.JSON(http.StatusOK, gin.H{
 		"data":  data,
 		"count": count,
