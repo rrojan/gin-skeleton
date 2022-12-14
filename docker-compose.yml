@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - .docker/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=pgUser89
+      - POSTGRES_PASSWORD=a4d^5Y9AahGj
+      - POSTGRES_DB=ginDB
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/api.Dockerfile
+

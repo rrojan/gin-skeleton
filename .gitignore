@@ -1,3 +1,4 @@
 .vscode
+.docker
 config/secrets.yml
 config/secrets.yaml

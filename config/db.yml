@@ -1,0 +1,4 @@
+USER: pgUser89
+DBNAME: ginDB
+HOST: localhost
+PORT: 5432
