@@ -4,8 +4,8 @@ Lightweight Go project skeleton for rapid development using the Gin framework.
 
 ### Includes:
 - [x] Routing, middleware support and panic recovery with Gin
-- [x] Postgres db and migrations support with GORM
-- [x] Docker setup
+- [ ] Postgres db and migrations support with GORM
+- [ ] Docker setup
 - [ ] Generator tool for scaffolding APIs with one command 
 
 Features:
