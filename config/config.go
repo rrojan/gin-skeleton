@@ -3,18 +3,21 @@ package config
 import (
 	"errors"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/rrojan/gin-skeleton/utils"
 	"gopkg.in/yaml.v3"
 )
 
+const CONFIG_PATH string = "config/"
+
 // LoadDataFromConfig loads returns all data from a ".yml" config
 func LoadDataFromConfig(fileName string) map[string]interface{} {
 	if !strings.Contains(fileName, ".yml") {
 		fileName += ".yml"
 	}
-	file, err := os.ReadFile(fileName)
+	file, err := os.ReadFile(filepath.Join(CONFIG_PATH, fileName))
 	utils.PanicIf(err)
 
 	fileData := make(map[string]interface{})

@@ -17,15 +17,18 @@ var appRoutes []func(Router) = []func(Router){
 
 // NewRouter generates a new router instance
 func NewRouter() *Router {
-	return &Router{
-		*gin.Default(),
+	router := gin.New()
+	// Use logger for logging and recovery middleware to catch and handle panics
+	router.Use(gin.Logger(), gin.Recovery())
+
+	r := &Router{
+		*router,
 		appRoutes,
 	}
-}
-
-// Setup applied routes in appRoutes to application
-func (r Router) Setup() {
+	// Bind routes for router
 	for _, route := range r.Routes {
-		route(r)
+		route(*r)
 	}
+
+	return r
 }
