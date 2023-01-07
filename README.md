@@ -10,8 +10,8 @@ Go project skeleton based on clean architecture for rapid development using the 
 - [ ] Request data validators
 
 Features:
-- [X] (Convention over configuration)[https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-in-practice-convention-over-configuration]
-- [x] (Clean architecture)[https://articles.wesionary.team/a-clean-architecture-for-web-application-in-go-lang-4b802dd130bb]
+- [X] [Convention over configuration](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-in-practice-convention-over-configuration)
+- [x] [Clean architecture](https://articles.wesionary.team/a-clean-architecture-for-web-application-in-go-lang-4b802dd130bb)
 - [x] Django-like app driven structure
 - [ ] Rapid development with generators / scaffolding
 
