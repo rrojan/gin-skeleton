@@ -1,4 +1,4 @@
-# Golang Gin Skeleton
+# Gin REST API skeleton
 ## (Fastr framework)
 Go project skeleton based on clean architecture for rapid development using the Gin framework.
 
