@@ -1,6 +1,6 @@
-# Gin REST API skeleton
+# Gin REST API template
 ## (Fastr framework)
-Go project skeleton based on clean architecture for rapid development using the Gin framework.
+Go project template based on clean architecture for rapid development using the Gin framework.
 
 ### Includes:
 - [x] Routing, middleware support and panic recovery with Gin
